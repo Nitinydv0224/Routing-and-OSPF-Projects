@@ -9,9 +9,7 @@ Static routing enables administrators to manually define routes for data transmi
 Connect three routers using Ethernet links.
 
 Assign appropriate IP addresses and subnet masks to all interfaces.
-
 Establish connectivity between three different LAN networks using Static Routes.
-
 Verify communication between all devices using ping and traceroute.
 
 🖥️ Network Topology
@@ -29,11 +27,8 @@ Router3	G0/1	   30.1.1.1	   255.255.255.0	PC3
 ⚙️ Device Requirements
 
 Routers: Cisco 2811 (3 units)
-
 End Devices: 3 PCs
-
 Connections: Ethernet Auto (Straight/Auto Cable)
-
 Software: Cisco Packet Tracer
 
 🧾 Configuration Steps
@@ -51,39 +46,28 @@ Router1(config)# interface g0/1
 Router1(config-if)# ip address 12.1.1.1 255.255.255.0
 Router1(config-if)# no shutdown
 
-
 Perform similar configurations on Router2 and Router3 according to the table above.
 
 2️⃣ Configure Static Routes
 
 Router1:
-
 ip route 20.1.1.0 255.255.255.0 12.1.1.2
 ip route 30.1.1.0 255.255.255.0 12.1.1.2
 
-
 Router2:
-
 ip route 10.1.1.0 255.255.255.0 12.1.1.1
 ip route 30.1.1.0 255.255.255.0 23.1.1.2
 
-
 Router3:
-
 ip route 10.1.1.0 255.255.255.0 23.1.1.1
 ip route 20.1.1.0 255.255.255.0 23.1.1.1
 
 3️⃣ Verify Connectivity
-
 Use ping from PC1 to PC3:
-
 PC1> ping 30.1.1.10
 
-
 Use traceroute to confirm the routing path:
-
 PC1> tracert 30.1.1.10
-
 
 ✅ If all replies are successful, static routing is configured properly.
 
@@ -92,12 +76,8 @@ PC1> tracert 30.1.1.10
 Try these enhancements:
 
 Default static route (for unknown destinations):
-
 ip route 0.0.0.0 0.0.0.0 12.1.1.2
-
-
 Floating static route (backup route):
-
 ip route 20.1.1.0 255.255.255.0 23.1.1.2 5
 
 📊 Verification Commands
@@ -107,24 +87,20 @@ show ip interface brief	Verifies interface IP and status
 show running-config	Displays router configuration
 ping	Tests network reachability
 traceroute	Displays hop-by-hop route path
+
 🎯 Learning Outcomes
 
 After completing this project, you will:
 
 Master manual static route configuration on multiple routers.
-
 Understand next-hop IP routing using Ethernet links.
-
 Develop IP addressing and subnetting skills.
-
 Learn to verify, test, and troubleshoot static routes effectively.
 
 🧠 Key Takeaways
 
 Static routing provides manual control and is ideal for small, stable topologies.
-
 It does not adapt automatically to topology changes — that’s where dynamic routing (like OSPF) comes in.
-
 Understanding static routing deeply builds a strong foundation for OSPF and EIGRP.
 
 📁 File Structure
