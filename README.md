@@ -20,18 +20,12 @@ Both combined
 
 Implement OSPF Routing:
 
-Single Area OSPF
-
-Multi-Area OSPF
-
-Router ID configuration
-
-Cost, priority, and network command usage
-
+Single Area OSPF,
+Multi-Area OSPF,
+Router ID configuration,
+Cost, priority, and network command usage,
 Verify connectivity using ping, traceroute, and show commands.
-
 Learn network design and IP addressing schemes.
-
 
 🛠️ Tools & Technologies
 
@@ -46,20 +40,7 @@ Cables: Auto cables (instead of serial DCE/DTE)
 
 📂 Folder Structure
 
-Routing-and-OSPF-Projects/
-│
-├── Project-1_Static-Routing/
-│   ├── topology.pkt
-│   ├── README.md
-│
-├── Project-2_OSPF-Single-Area/
-│   ├── topology.pkt
-│   ├── README.md
-│
-├── Project-3_OSPF-Multi-Area/
-│   ├── topology.pkt
-│   ├── README.md
-│
-└── Documentation/
-    ├── IP-Addressing-Scheme.xlsx
-    ├── Commands-Reference.txt
+Routing-and-OSPF-Projects
+
+Project 1 - Static Routing 
+
