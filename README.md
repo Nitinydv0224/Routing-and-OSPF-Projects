@@ -14,10 +14,8 @@ Understand how routers build and maintain routing tables.
 
 Configure Static Routing using:
 
-Next-hop IP
-
-Exit Interface
-
+Next-hop IP,
+Exit Interface,
 Both combined
 
 Implement OSPF Routing:
